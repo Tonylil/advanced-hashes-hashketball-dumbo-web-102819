@@ -215,10 +215,10 @@ def winning_team()
   points = {}
   game_hash.each do |key, value|
     value[:players].each do |player|
-      if points.key?(key)
-        points[key] += player[:points]
+      if points.key?(value[:team_name])
+        points[value[:team_name]] += player[:points]
       else
-        points[key] = player[:points]
+        points[value[:team_name]] = player[:points]
       end
     end
   end
