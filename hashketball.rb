@@ -211,7 +211,13 @@ def most_points_scored()
   return name
 end
 
-
+def winning_team()
+  homePoints = 0
+  awayPoints = 0 
+  game_hash.each do |key, value|
+    
+  
+end
 
 
 
