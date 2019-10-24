@@ -233,7 +233,8 @@ def winning_team()
       highestPointHash = teamName
     end
   end
-  puts "  Points: #{points}, teamName #{teamName}"
+  puts "  Points: #{points}, teamName #{highestPointHash}"
+  highestPointHash
 end
 
 
