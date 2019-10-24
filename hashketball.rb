@@ -220,8 +220,11 @@ def winning_team()
         points[key] += player[:points]
       else
         points[key] = player[:points]
+      end
     end
   end
+  
+  puts "  Points: #{points}"
 end
 
 
