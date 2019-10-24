@@ -236,12 +236,12 @@ def winning_team()
 end
 
 def player_with_longest_name()
-  mostPoints = -1
+  mostLen = -1
   name = ""
   game_hash.each do |key, value|
     value[:players].each do |player|
-      if mostPoints < player[:points]
-        mostPoints = player[:points]
+      if mostLen < player[:player_name].size
+        mostLen = player[:player_name].size
         name = player[:player_name]
       end
     end
