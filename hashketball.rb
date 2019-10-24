@@ -151,6 +151,7 @@ def team_names()
   game_hash.each do |key, value|
     teamNames.push(value[:team_name])
   end
+  teamNames
 end
 
 
