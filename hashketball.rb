@@ -223,10 +223,14 @@ def winning_team()
     end
   end
   
+  highestValue = -1
   highestPointHash = ""
-  points.each do |key, value|
-    
-  puts "  Points: #{points}"
+  points.each do |teamName, value|
+    if highestValue < value
+      highestPointHash = teamName
+    end
+  end
+  puts "  Points: #{points}, teamName #{teamName}"
 end
 
 
