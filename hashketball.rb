@@ -230,6 +230,7 @@ def winning_team()
   points.each do |teamName, value|
     puts "how about now?"
     if highestValue < value
+      highestValue = value
       highestPointHash = teamName
     end
   end
