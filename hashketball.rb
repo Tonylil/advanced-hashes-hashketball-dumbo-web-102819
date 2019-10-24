@@ -260,10 +260,14 @@ def long_name_steals_a_ton?()
         mostLen = player[:player_name].size
         longestName = player[:player_name]
       end
+      if mostSteal < player[:steals].size
+        mostSteal = player[:steals].size
+        mostStealName = player[:player_name]
+      end
     end
   end
   
-  return name
+  return longestName ==mostStealName
 end
 
 
