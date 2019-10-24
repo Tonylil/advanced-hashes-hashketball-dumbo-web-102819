@@ -213,7 +213,6 @@ end
 
 def winning_team()
   points = {}
-  highestPointsIndex = -1
   game_hash.each do |key, value|
     value[:players].each do |player|
       if points.key?(key)
@@ -224,6 +223,9 @@ def winning_team()
     end
   end
   
+  highestPointHash = ""
+  points.each do |key, value|
+    
   puts "  Points: #{points}"
 end
 
